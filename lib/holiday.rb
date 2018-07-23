@@ -65,8 +65,6 @@ def all_supplies_in_holidays(holiday_hash)
       array.each do |word|
         word = word.capitalize!
       end
-
-
       myString = "  #{array.join(" ")}: "
       myString = myString +  "#{value.map { |i|  i.to_s }.join(", ")}"
       puts myString
@@ -77,5 +75,11 @@ end
 def all_holidays_with_bbq(holiday_hash)
   # return an array of holiday names (as symbols) where supply lists
   # include the string "BBQ"
-
+  array = []
+  holiday_hash.each do |season, holiday|
+    if holiday.values.include?("BBQ")
+      array << holiday.to_s
+    end
+  end 
+  array
 end
