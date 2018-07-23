@@ -80,7 +80,7 @@ def all_holidays_with_bbq(holiday_hash)
     holiday.each do |attribute, value|
 
       if value.include?("BBQ")
-        array << ":"+ attribute.to_s
+        array << attribute
       end
     end
   end
