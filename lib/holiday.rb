@@ -68,6 +68,7 @@ def all_supplies_in_holidays(holiday_hash)
       array.join(" ")
       myString = "  #{array[0]}: "
       value.map { |i| "'" + i.to_s + "'" }.join(",")
+      myString =myString + value
     end
   end
 end
