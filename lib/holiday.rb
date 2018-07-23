@@ -66,7 +66,7 @@ def all_supplies_in_holidays(holiday_hash)
         word = word.capitalize!
       end
 
-      
+
       myString = "  #{array[0]}: "
       myString = myString +  "#{value.map { |i|  i.to_s }.join(", ")}"
       puts myString
