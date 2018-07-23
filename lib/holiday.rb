@@ -67,9 +67,8 @@ def all_supplies_in_holidays(holiday_hash)
       end
       array.join(" ")
       myString = "  #{array[0]}: "
-      value.each do |word|
-        myString = myString + "#{word} "
-      end
+      value.join (", ")
+      myString = myString + "#{word} "
       puts myString
     end
   end
