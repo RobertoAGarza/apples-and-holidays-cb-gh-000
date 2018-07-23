@@ -68,7 +68,7 @@ def all_supplies_in_holidays(holiday_hash)
       array.join(" ")
       myString = "  #{array[0]}: "
       value.join (", ")
-      myString = myString + "#{word} "
+      myString = myString + "#{value} "
       puts myString
     end
   end
