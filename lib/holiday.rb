@@ -63,9 +63,9 @@ def all_supplies_in_holidays(holiday_hash)
       attribute = attribute.to_s
       array = attribute.split("_")
       array.each do |word|
-        word = word.capitalize!
+        newArray << word.capitalize!
       end
-      array.join(" ")
+      newArray.join(" ")
 
       myString = "  #{array[0]}: "
       myString = myString +  "#{value.map { |i|  i.to_s }.join(", ")}"
