@@ -66,7 +66,7 @@ def all_supplies_in_holidays(holiday_hash)
         word = word.capitalize!
       end
       array.join(" ")
-      puts "#{attribute}: #{value}"
+      puts "#{array}: #{value}"
     end
   end
 end
